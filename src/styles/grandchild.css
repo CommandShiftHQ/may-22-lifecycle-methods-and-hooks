@@ -1,7 +1,14 @@
 .grandchild {
   margin-top: 1em;
   padding: 2em;
+}
+
+.grandchild.dark {
   background-color: purple;
+}
+
+.grandchild.light {
+  background-color: white;
 }
 
 .grandchild__title {

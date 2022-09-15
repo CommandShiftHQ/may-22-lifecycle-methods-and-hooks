@@ -9,7 +9,7 @@ const Grandchild = () => {
   }
 
   return (
-    <div className="grandchild">
+    <div className={`grandchild ${useDarkTheme ? "dark" : "light"}`}>
       <div className="grandchild__title">
         Grandchild component
       </div>
