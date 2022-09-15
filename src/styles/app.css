@@ -1,0 +1,23 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #282c34;
+  color: black;
+}
+
+.app__container{
+  margin-bottom: 2em;
+  padding: 10px;
+  background-color: lightgray;
+  min-width: 50%;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+.app__container-title {
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
