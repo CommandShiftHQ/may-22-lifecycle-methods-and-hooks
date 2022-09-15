@@ -1,12 +1,7 @@
-# Lifecycle methods and hooks
+# Lifecycle methods and hooks - May 22 Live Demo
 
-This is a template repo for  use in demoes to show the  setupand use of useState, useEffect and useContext APIs in React 18
+This repo holds the content of the work done during the lecture. If youre following along with the recording, we started at the commit named `Add child and grandchild components for use with useContext`. Look through the commit history in Github to see what we did step by step!
 
-## Setup for use in lectures
-Some basic bootstrapping has been done to give a clean starting point. 
-- Clone the repo then checkout commit titled 'Add child and grandchild components for use with useContext', create a new branch, then complete your demo (committing as you go).
-- Once the demo is complete, create a new github repo (including the cohorts name in the title), and add it as a new remote.
-- Push up your changes to this remote so students have a copy of the exact code being written in the demo
 
 ## Author
-Stu Cowley
+Stu Cowley + May 22 cohort of Manchester Codes
