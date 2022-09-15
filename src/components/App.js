@@ -1,12 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "../styles/app.css";
 
 const App = () => {
   const [count, setCount] = useState(0);
+  const [word, setWord] = useState("");
 
   const handleClick = () => {
     setCount((prev) => prev + 1);
   };
+
+  useEffect(() => {
+    console.log('loaded')
+    axios.get("https://random-word-api.herokuapp.com/word").then((res) => {
+      setWord(res.data[0]);
+    });
+    return () => {
+      setWord("");
+    }
+  }, []);
+
+  useEffect(()=> {
+    console.log("reloaded")
+  }, [count])
 
   return (
     <div className="app">
@@ -15,6 +31,10 @@ const App = () => {
         <div className="app__container-title">useState</div>
         <div>Current count: {count}</div>
         <button onClick={handleClick}>click me!</button>
+      </div>
+      <div className="app__container">
+        <div className="app__container-title">useEffect</div>
+        <div>Fetched word: {word}</div>
       </div>
     </div>
   );
