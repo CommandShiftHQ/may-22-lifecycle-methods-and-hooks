@@ -1,0 +1,9 @@
+.child {
+  padding: 2em;
+  border: 2px solid blue;
+}
+
+.child__title {
+  text-decoration: underline;
+  color: blue;
+}

@@ -1,0 +1,9 @@
+.grandchild {
+  margin-top: 1em;
+  padding: 2em;
+  background-color: purple;
+}
+
+.grandchild__title {
+  text-decoration: underline;
+}
